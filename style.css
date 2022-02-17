@@ -8,3 +8,27 @@ body
 {
     
 }
+header 
+{
+    height: 50px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.img
+{
+    width: 30%;
+    background: teal;
+    text-align: center;
+    line-height: 50px;
+}
+.img img
+{
+    padding-top: 8px;
+    height: 40px;
+    width: 150px;
+}
+.menu
+{
+    width: 70%;
+    background: thistle;
+}
