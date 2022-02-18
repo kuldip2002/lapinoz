@@ -235,45 +235,45 @@ box-shadow: 0 5px 20px -10px rgb(0 0 0 / 30%);
     margin-top: 20px;
     height: 200px;
     max-width: 100%;
-    background: red;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
 }
 .food1
 {
-    background: tan;
     width: 25%;
 }
 .food2
 {
-    background: teal;
     width: 25%;
 }
 .food3
 {
-    background: thistle;
     width: 25%;
 }
 .food4
 {
-    background: tomato;
     width: 25%;
 }
 .food5
 {
-    background:rebeccapurple;
     width: 33.33%;
 }
 .food6
 {
-    background: tomato;
     width: 33.33%;
 }
 .food7
 {
-    background: teal;
     width: 33.33%;
+}
+.food_img
+{
+    height: 150px;
+    width: 180px;
+    border-radius: 10px;
+    padding-top: 20px;
+    box-shadow: 0px 10px 25px -10px rgba(0,0,0,0.4);
 }
 @media screen and (max-width:768px)
 {
@@ -325,6 +325,34 @@ box-shadow: 0 5px 20px -10px rgb(0 0 0 / 30%);
     .owner
     {
         width: 100%;
+    }
+    .food1
+    {
+        width: 50%;
+    }
+    .food2
+    {
+        width: 50%;
+    }
+    .food3
+    {
+        width: 50%;
+    }
+    .food4
+    {
+        width: 50%;
+    }
+    .food5
+    {
+        width: 50%;
+    }
+    .food6
+    {
+        width: 50%;
+    }
+    .food7
+    {
+        width: 50%;
     }
 }
 @media screen and (max-width:480px)
