@@ -11,10 +11,13 @@ body
 header 
 {
     height: 50px;
+    width: 100%;
     display:flex;
     flex-wrap: wrap;
     background: #fff;
-    box-shadow: 0px 10px 25px -10px rgba(0,0,0,0.2);
+    box-shadow: 0px 10px 25px -10px rgba(0,0,0,0.4);
+    position: fixed;
+    z-index: 100;
 }
 .img
 {
@@ -24,7 +27,6 @@ header
 }
 .img img
 {
-    padding-top: 8px;
     height: 40px;
     width: 150px;
 }
@@ -35,9 +37,345 @@ header
     line-height: 50px;
     justify-content: space-evenly;
 }
-a
+.menu a
 {
     text-decoration: none;
     color: #000;
     padding: 0 10px;
+}
+.menu a:hover
+{
+    color: #000;
+}
+.power-icon
+{
+    text-align: right;
+    line-height: 50px;
+    display: none;
+}
+.power-icon a 
+{
+    color: #000;
+    text-decoration: none;
+    padding-left: 30px;
+}
+.device
+{
+    display: none;
+    max-width: 100%;
+}
+.cnt
+{
+    height: 100vh;
+    max-width: 100%;
+    background: url(images/lapinoz-going-international.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cnt .list
+{
+   height: 100vh;
+   max-width: 50%;
+}
+.area{
+    height: 100vh;
+    max-width: 50%;
+}
+.cnt_list
+{
+    height: 80%;
+    max-width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 45px 20px 100px auto;
+}
+.cnt_list h3
+{
+    padding-top: 40px;
+    text-align: center;
+    color: rgb(22, 70, 22);
+    font-size: 35px;
+    font-weight: 600;
+}
+.ul{
+    list-style-type: none;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .ul li{
+    display: inline-block;
+    width: 100%;
+    max-width: 30%;
+    text-align: center;
+    margin: 15px 0;
+    font-size: 17px;
+    font-weight: 500;
+    color: #333;
+}
+.cnt_img
+{
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px -10px rgb(0 0 0 / 30%);
+}
+.cnt_img img{
+    height: 100%;
+    max-width: 100%;
+}
+.launching_soon
+{
+    height: 300px;
+    max-width: 600px;
+    margin: 40px auto;
+    background:transparent;
+    display: flex;
+    flex-wrap: wrap;
+}
+.launching_soon h3
+{
+    color: rgb(22, 70, 22);
+    font-size: 35px;
+    font-weight: 600;
+}
+.area_list{
+    list-style-type: none;
+    margin-top: 20px;
+}
+.area_list li{
+font-size: 16px;
+color: #24572c;
+display: inline-block;
+max-width:auto;
+padding: 5px;
+background: #ffffff;
+border-radius: 0.5em;
+margin: 0.3em;
+box-shadow: 0 5px 20px -10px rgb(0 0 0 / 30%);
+}
+.article
+{
+    background: #fff;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.story
+{
+    width: 50%;
+    text-align: justify;
+    text-justify: inter-word;
+    position: relative;
+}
+.story h2
+{
+    padding-left: 70px;
+    padding-top: 160px;
+}
+.story p 
+{
+    padding-left: 70px;
+    padding-top: 10px;  
+    text-align: justify;
+    text-justify: inter-word;  
+}
+.story a
+{
+    padding: 10px 35px;
+    background:#24572C;
+    border: 2px solid #24572C;
+    border-radius: 80px;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    top: 450px;
+    left: 170px;
+}
+.story a:hover
+{
+    background:#fff;
+    color: #000;
+    border: none;
+}
+.owner
+{
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+}
+.food
+{
+    height: 100vh;
+    background: url("images/menu.jpg");
+    max-width: 100%;
+    text-align: center;
+}
+.food p 
+{
+    padding-top: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.food h2
+{
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.type_food
+{
+    margin-top: 20px;
+    height: 200px;
+    max-width: 100%;
+    background: red;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.food1
+{
+    background: tan;
+    width: 25%;
+}
+.food2
+{
+    background: teal;
+    width: 25%;
+}
+.food3
+{
+    background: thistle;
+    width: 25%;
+}
+.food4
+{
+    background: tomato;
+    width: 25%;
+}
+.food5
+{
+    background:rebeccapurple;
+    width: 33.33%;
+}
+.food6
+{
+    background: tomato;
+    width: 33.33%;
+}
+.food7
+{
+    background: teal;
+    width: 33.33%;
+}
+@media screen and (max-width:768px)
+{
+    .img
+    {
+        max-width: 70%;
+    }
+    .menu
+    {
+        display: none;
+    }
+    .power-icon
+    {
+        width: 30%;
+        display: block;
+    }
+    .lapt
+    {
+        display: none;
+    }
+    .device
+    {
+        display: block;
+    }
+    .cnt
+    {
+        background-size: 100% 100%;
+    }
+    .cnt .list
+    {
+       max-width: 100%;
+    }
+    .cnt .area
+    {
+        max-width: 100%;
+    }
+    .ul li 
+    {
+        display:inline-table;
+    }
+    .area_list
+    {
+        display:grid;
+    }
+    .story
+    {
+        width: 100%;
+    }
+    .owner
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width:480px)
+{
+    .img
+    {
+        max-width: 70%;
+    }
+    .menu
+    {
+        display: none;
+    }
+    .power-icon
+    {
+        width: 30%;
+        display: block;
+    }
+    .lapt
+    {
+        display: none;
+    }
+    .device
+    {
+        display: block;
+    }
+    .cnt
+    {
+        background-size: 100% 100%;
+    }
+    .cnt .list
+    {
+        max-width: 100%;
+    }
+    .cnt .area
+    {
+        max-width: 100%;
+    }
+    .ul li 
+    {
+        display:inline-table;
+    }
+    .area_list
+    {
+        display:grid;
+    }
+    .story
+    {
+        width: 100%;
+    }
+    .owner
+    {
+        width: 100%;
+    }
 }
