@@ -13,7 +13,6 @@ header
     height: 50px;
     width: 100%;
     display:flex;
-    flex-wrap: wrap;
     background: #fff;
     box-shadow: 0px 10px 25px -10px rgba(0,0,0,0.4);
     position: fixed;
@@ -49,7 +48,6 @@ header
 }
 .power-icon
 {
-    text-align: right;
     line-height: 50px;
     display: none;
 }
@@ -57,7 +55,7 @@ header
 {
     color: #000;
     text-decoration: none;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 .device
 {
@@ -71,7 +69,7 @@ header
     background: url(images/lapinoz-going-international.jpg);
     background-size: cover;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .cnt .list
 {
@@ -166,7 +164,7 @@ box-shadow: 0 5px 20px -10px rgb(0 0 0 / 30%);
     height: 100vh;
     max-width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:nowrap;
 }
 .story
 {
@@ -275,6 +273,35 @@ box-shadow: 0 5px 20px -10px rgb(0 0 0 / 30%);
     padding-top: 20px;
     box-shadow: 0px 10px 25px -10px rgba(0,0,0,0.4);
 }
+.cust_rev
+{
+    height: 100vh;
+    margin-top: 10px;
+    background: url("images/testimonial-bg.jpg");
+    text-align: center;
+}
+.cust_rev p 
+{
+    padding-top: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.cust_rev h1
+{
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.cust_rev i 
+{
+    padding-top: 20px;
+    font-size: 170px;
+}.location
+{
+    margin-top: 10px;
+    height: 100vh;
+    background: green;
+}
 @media screen and (max-width:768px)
 {
     .img
@@ -289,6 +316,7 @@ box-shadow: 0 5px 20px -10px rgb(0 0 0 / 30%);
     {
         width: 30%;
         display: block;
+        margin-left: 200px;
     }
     .lapt
     {
@@ -300,6 +328,7 @@ box-shadow: 0 5px 20px -10px rgb(0 0 0 / 30%);
     }
     .cnt
     {
+        display: grid;
         background-size: 100% 100%;
     }
     .cnt .list
@@ -317,6 +346,10 @@ box-shadow: 0 5px 20px -10px rgb(0 0 0 / 30%);
     .area_list
     {
         display:grid;
+    }
+    .article
+    {
+        display: grid;
     }
     .story
     {
@@ -369,6 +402,7 @@ box-shadow: 0 5px 20px -10px rgb(0 0 0 / 30%);
     {
         width: 30%;
         display: block;
+        margin-left: 200px;
     }
     .lapt
     {
@@ -380,6 +414,7 @@ box-shadow: 0 5px 20px -10px rgb(0 0 0 / 30%);
     }
     .cnt
     {
+        display: grid;
         background-size: 100% 100%;
     }
     .cnt .list
@@ -398,6 +433,10 @@ box-shadow: 0 5px 20px -10px rgb(0 0 0 / 30%);
     {
         display:grid;
     }
+    .article
+    {
+        display: grid;
+    }
     .story
     {
         width: 100%;
@@ -405,5 +444,33 @@ box-shadow: 0 5px 20px -10px rgb(0 0 0 / 30%);
     .owner
     {
         width: 100%;
+    }
+    .food1
+    {
+        width: 50%;
+    }
+    .food2
+    {
+        width: 50%;
+    }
+    .food3
+    {
+        width: 50%;
+    }
+    .food4
+    {
+        width: 50%;
+    }
+    .food5
+    {
+        width: 50%;
+    }
+    .food6
+    {
+        width: 50%;
+    }
+    .food7
+    {
+        width: 50%;
     }
 }
